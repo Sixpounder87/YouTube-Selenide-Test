@@ -60,7 +60,7 @@ public final class YouTubeTest {
 
 		// String reference = $("div.upload-state-bar input[value]").getValue();
 
-		// Sleep 30 seconds to wait the video is available in YouTube search
+		// Sleep 45 seconds to wait the video is available in YouTube search
 		try {
 			Thread.sleep(45000);
 		} catch (InterruptedException e) {
