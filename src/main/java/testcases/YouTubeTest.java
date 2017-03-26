@@ -70,6 +70,13 @@ public final class YouTubeTest {
 		$("#search-btn").click();
 		$(".item-section h3 > a[title='" + VIDEO_TITLE + "']")
 				.shouldBe(visible);
+
+		// Sleep 2 seconds to give a possibility to see the search results
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@AfterClass
